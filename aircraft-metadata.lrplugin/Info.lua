@@ -27,7 +27,7 @@ return {
 	LrMetadataTagsetFactory = {'MetadataTagsetBasic.lua', 'MetadataTagsetExtended.lua',},
 	LrPluginInfoProvider = 'PluginInfoProvider.lua',
 	LrInitPlugin  = 'InitPlugin.lua',
-	--LrShutdownPlugin = 'ShutdownPlugin.lua',
+	LrShutdownPlugin = 'ShutdownPlugin.lua',
 
 	LrPluginInfoUrl = 'https://github.com/aviationphoto/AircraftMetadata-Lightroom-Plugin',
 
