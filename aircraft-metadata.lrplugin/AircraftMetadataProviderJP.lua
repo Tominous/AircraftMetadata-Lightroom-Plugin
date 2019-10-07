@@ -39,7 +39,7 @@ function lookupMetadataJP(photoLogFilename, searchRegistration)
 	LrLogger:debug(photoLogFilename..' - looking up registration at '..searchURL..' for: '..searchRegistration)
 	-- do the lookup
 	result = LrHttp.get(searchURL)
-	--LrLogger:debug('HTTP lookup returned: '..result)
+	LrLogger:debug('HTTP lookup returned: '..result)
 	-- check if lookup returned something useful
 	if string.find(result, tokenSuccessfulSearch) == nil then
 		-- lookup returned nothing useful
@@ -82,14 +82,14 @@ function extractMetadata(payload, Token1, Token2)
 		LrErrors.throwUserError('Token "'..Token1..'" not found.')
 	else
 		line = string.sub(payload, posEnd + 1)
-		--LrDialogs.message('Lookup Airline - after Token 1', line, 'info')
+		LrDialogs.message('Lookup Airline - after Token 1', line, 'info')
 		posStart, posEnd = string.find(line, Token2)
 		if posStart == nil then
 			LrLogger:error('Token '..Token2..' not found.')
 			LrErrors.throwUserError('Token "'..Token2..'" not found.')
 		else
 			line = LrStringUtils.trimWhitespace(string.sub(line, 1, posStart - 1))
-			--LrDialogs.message('Lookup Airline - after Token 2', line, 'info')
+			LrDialogs.message('Lookup Airline - after Token 2', line, 'info')
 			if line == '' then
 				line = 'not set'
 			end
