@@ -27,8 +27,8 @@ return {
 		{dataType='string', searchable=true, browsable=true, id='airline', title='Airline'},
 		{dataType='url', searchable=false, browsable=false, readOnly=true, id='aircraft_url', title='Aircraft URL'},
 		{dataType='string', searchable=true, browsable=true, id='airport_iata', title='Airport (IATA)'},
-		--{dataType='string', searchable=true, browsable=true, id='flight', title='Flight'},
-		--{dataType='string', searchable=true, browsable=true, id='flight_from', title='from'},
-		--{dataType='string', searchable=true, browsable=true, id='flight_to', title='to'},
+		{dataType='string', searchable=true, browsable=true, id='flight', title='Flight'},
+		{dataType='string', searchable=true, browsable=true, id='flight_from', title='from'},
+		{dataType='string', searchable=true, browsable=true, id='flight_to', title='to'},
 	}
 }
