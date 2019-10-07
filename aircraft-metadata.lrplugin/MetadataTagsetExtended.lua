@@ -34,10 +34,10 @@ return {
 		'com.adobe.separator',
 		{formatter = "com.adobe.label", label = "Location",},
 		'ch.aviationphoto.aircraftmetadata.airport_iata',
-		--'com.adobe.separator',
-		--{formatter = "com.adobe.label", label = "Flight",},
-		--'ch.aviationphoto.aircraftmetadata.flight',
-		--'ch.aviationphoto.aircraftmetadata.flight_from',
-		--'ch.aviationphoto.aircraftmetadata.flight_to',
+		'com.adobe.separator',
+		{formatter = "com.adobe.label", label = "Flight",},
+		'ch.aviationphoto.aircraftmetadata.flight',
+		'ch.aviationphoto.aircraftmetadata.flight_from',
+		'ch.aviationphoto.aircraftmetadata.flight_to',
 	}
 };
